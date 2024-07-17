@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(45deg, #061de3,#e306ca );
+    
+  display: flex;
+  justify-content: center;
+  
+}
+.container{
+    width: 350px;
+    height: 400px;
+    perspective: 800px;
+    
+}
+.card{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 40px;
+    transition: transform 1500ms;
+    
+    transform-style: preserve-3d;
+}
+ /* .card:hover{
+    
+    transform: rotatey(180deg)  rotatez(180deg);
+} */
+ #card.flip{
+    transform: rotatey(180deg) rotatez(180deg);
+ }
+input{
+   position: absolute;
+   bottom: 170px;
+   left: 90px;
+   border-radius: 7px;
+   background-color: #f8ede3af;
+   border-style: none;
+}
+#btn{
+    width: 20%;
+    height: 7%;
+    position: absolute;
+    bottom: 140px;
+    right: 140px;
+    border-style: none;
+    border-radius: 7px;
+    color: rgba(56, 35, 151, 0.897);
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.question1{
+   display: flex;
+   justify-content: center;
+   width: 70%;
+   position: absolute;
+   bottom: 180px;
+   right: 70px;
+   backdrop-filter: blur(1px);
+}
+.front,
+.back{
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem; 
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    color: rgba(0, 0, 0, 0.651);font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  backface-visibility: hidden;
+}
+.front{
+    background-image: url(img/ony4.jpg);
+    background-size: 350px 400px;
+    
+}
+.back{
+    background-color: #e7efe6d0;
+    transform: rotatey(180deg)  rotatez(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 10px;
+}
+#unflip{
+    width: 20%;
+    height: 7%;
+  
+    border-style: none;
+    border-radius: 7px;
+    color: rgba(56, 35, 151, 0.651);
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.arrbtn{
+    position: absolute;
+    bottom: 130px;
+    color: black;
+    font-weight: bolder;
+    font-size: large;
+}
+.material-symbols-outlined{
+    font-weight: bolder;
+}
+.arrbtn:hover > .material-symbols-outlined{
+    color: #e7efe6d0;
+    text-shadow: 0 0 5px 5px gray;
+}
+.arrbk{
+    position: absolute;
+    right: 720px;
+}
+.question1{
+    color:#070301 ;
+    background-color: rgba(240, 248, 255, 0);
+    background-size: 2px;
+    position: absolute;
+    bottom: 200px;
+}
+.front3{
+    background-image: url(img/ony3.jpg);
+}
+.front2{
+    background-image: url(img/ony6.jpg);
+    background-color: rgba(240, 248, 255, 0.918);
+}
